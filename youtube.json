@@ -1,8 +1,7 @@
 {
-  "versao": 1,
+  "versao": 2,
   "atualizado": "2026-11-13",
-  "nota": "Baseado no yt-dlp 2026.10.26. Ao atualizar, aumente 'versao' e mude 'atualizado'.",
-
+  "nota": "Baseado no yt-dlp 2026.10.26. Ao atualizar, aumente 'versao' e mude 'atualizado'. 'musica' e 'player' são usados pelo Música Direta e pelo Tubo; 'web' e 'tubo' só pelo Tubo.",
   "musica": {
     "host": "https://music.youtube.com",
     "clientName": "WEB_REMIX",
@@ -12,7 +11,15 @@
     "hl": "pt",
     "gl": "BR"
   },
-
+  "web": {
+    "host": "https://www.youtube.com",
+    "clientName": "WEB",
+    "clientVersion": "2.20260708.00.00",
+    "clientNameId": 1,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "hl": "pt",
+    "gl": "BR"
+  },
   "player": [
     {
       "nome": "visionos",
@@ -44,14 +51,24 @@
       "userAgent": "com.google.android.apps.youtube.vr.oculus/1.65.10 (Linux; U; Android 12L; eureka-user Build/SQ3A.220605.009.A1) gzip"
     }
   ],
-
-  "formatosAudio": ["audio/mp4"],
-
+  "formatosAudio": [
+    "audio/mp4"
+  ],
   "busca": {
     "musicas": "EgWKAQIIAWoMEA4QChADEAQQCRAF",
     "videos": "EgWKAQIQAWoMEA4QChADEAQQCRAF",
     "albuns": "EgWKAQIYAWoMEA4QChADEAQQCRAF",
     "artistas": "EgWKAQIgAWoMEA4QChADEAQQCRAF",
     "playlists": "Eg-KAQwIABAAGAAgACgBMABqChAEEAMQCRAFEAo%3D"
+  },
+  "formatosVideo": [
+    "video/mp4; codecs=\"avc1"
+  ],
+  "tubo": {
+    "buscaVideos": "EgIQAQ%3D%3D",
+    "buscaCanais": "EgIQAg%3D%3D",
+    "buscaPlaylists": "EgIQAw%3D%3D",
+    "abaVideosCanal": "EgZ2aWRlb3PyBgQKAjoA",
+    "sponsorBlock": "https://sponsor.ajay.app"
   }
 }
